@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+}
+
+.square {
+  background: #dddddd;
+  border: 1px solid #999;
+  border: 0px;
+  /* border-radius: 3px; */
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 34px;
+  box-shadow: inset -2px -2px 3px #858585c0, inset 2px 2px 3px #ffffff;
+  cursor: pointer;
+  color: #111;
+  transition: box-shadow 0.1s linear;
+}
+
+.square:hover,
+.square:focus {
+  /* box-shadow: inset 2px 2px 3px #858585c0, inset -2px -2px 3px #858585c0; */
+  background: #ccc;
+}
+
+.square:active {
+  background: #ccc;
+  /* box-shadow: inset 3px 3px 4px #858585c0, inset -3px -3px 4px #858585c0; */
+  box-shadow: inset 2px 2px 3px #858585c0, inset -2px -2px 3px #858585c0;
+}
+
+.square[disabled] {
+  cursor: default;
+}
+
+.square[disabled]:focus,
+.square[disabled]:active {
+  box-shadow: inset -2px -2px 3px #858585c0, inset 2px 2px 3px #ffffff;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
+
+/*Custom font*/
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap");
+.comic-neue-regular {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
